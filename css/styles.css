@@ -6,7 +6,7 @@
 
 body {
     background: linear-gradient(150deg, #5c0488, #ffffff);
-    color: rgb(47, 6, 124);
+    color: rgb(0, 0, 0);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-    max-height: 800px;
+    max-height: 600px;
 }
 
 @keyframes pulse {
