@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-    max-height: 600px;
+    max-height: 350px;
 }
 
 @keyframes pulse {
