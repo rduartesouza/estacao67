@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/ico.png">
     <title>Estação 67</title>
 </head>
 <body>
-    <p> ### ESTAMOS CHEGANDO!! ### </p>
+    <div class="container text-center">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Estação 67" class="logo img-fluid">
+        </div>
+        <!-- <h1 class="display-5 text-center">Em Breve!</h1> --> 
+        <audio controls id="musicPlayer" class="mt-4" autoplay>
+            <source src="music/music.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento audio.
+        </audio>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
