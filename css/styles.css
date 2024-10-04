@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(150deg, #af03c6, #ffffff);
+    background: linear-gradient(150deg, #e27ef7, #ffffff);
     color: rgb(0, 0, 0);
     height: 100vh;
     display: flex;
@@ -14,9 +14,47 @@ body {
     flex-direction: column;
     font-family: 'Arial', sans-serif; /* Definindo uma fonte padrão */
 }
+.social-icons {
+    font-size: 3rem; /* Aumenta o tamanho dos ícones */
+    margin-top: 80px; /* Adiciona mais espaço acima dos ícones */
+}
 
-.logo-container {
-    animation: pulse 1.3s infinite;
+.icon-link {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #000; /* Cor preta para os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s;
+}
+
+/* Muda a cor para cinza claro ao passar o mouse */
+.icon-link:hover {
+    color: #ccc; /* Cor ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.icon-link i {
+    filter: grayscale(100%); /* Aplica o efeito preto e branco */
+    transition: filter 0.3s; /* Transição suave */
+}
+
+.music-player {
+    position: absolute; /* Permite o posicionamento em relação à janela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    background-color: rgba(114, 3, 96, 0.8); /* Fundo branco com transparência */
+    border-radius: 30px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 9px 3px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.music-player audio {
+    width: 250px; /* Largura do player */
+    outline: none; /* Remove contorno padrão */
+}
+
+
+.logo-pulse {
+    animation: pulse 1.2s infinite;
 }
 
 .logo {
@@ -24,7 +62,7 @@ body {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1.07); }
-    50% { transform: scale(1.06); }
-    100% { transform: scale(1.058); }S
+    0% { transform: scale(1.09); }
+    50% { transform: scale(1.085); }
+    100% { transform: scale(1.07); }S
 }
