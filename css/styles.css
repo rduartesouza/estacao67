@@ -16,7 +16,7 @@ body {
 }
 .social-icons {
     font-size: 3rem; /* Aumenta o tamanho dos ícones */
-    margin-top: 80px; /* Adiciona mais espaço acima dos ícones */
+    margin-top: 100px; /* Adiciona mais espaço acima dos ícones */
 }
 
 .icon-link {
@@ -37,20 +37,20 @@ body {
     transition: filter 0.3s; /* Transição suave */
 }
 
-.music-player {
-    position:absolute; /* Permite o posicionamento em relação à janela */
-    bottom: 10px;
-    /*top: 10px; /* Distância do topo */
-    /*right: 20px; /* Distância da direita */
-    left: 10px;
-    background-color: rgba(245, 238, 238, 0); /* Fundo branco com transparência */
-    border-radius: 30px; /* Bordas arredondadas */
-    padding: 0px; /* Espaçamento interno */
-    box-shadow: 0 9px 3px rgba(0, 0, 0, 0.2); /* Sombra */
-    display: flex;
+/*.music-player {
+ /*   position:absolute; /* Permite o posicionamento em relação à janela */
+  /*  bottom: 10px;
+    /*top: 10px;  Distância do topo */
+   /* right: 10px;  Distância da direita */
+    /* left: 10px; */
+    /*background-color: rgba(245, 238, 238, 0); /* Fundo branco com transparência */
+    /*border-radius: 30px; /* Bordas arredondadas */
+   /* padding: 0px; /* Espaçamento interno */
+   /* box-shadow: 0 9px 3px rgba(0, 0, 0, 0.2); /* Sombra */
+   /* display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .music-player audio {
     width: 280px; /* Largura do player */
@@ -66,10 +66,13 @@ body {
 
 .logo-pulse {
     animation: pulse 1.2s infinite;
+    max-height: 500px;
+    max-width: 500px;
 }
 
-.logo {
-    max-height: 350px;
+.logo-estacao {
+    max-height: 900px;
+    max-width: 900px;
 }
 
 footer {
@@ -90,14 +93,60 @@ footer a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.rodape {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
 
 @keyframes pulse {
     0% { transform: scale(1.09); }
     50% { transform: scale(1.085); }
-    100% { transform: scale(1.07); }S
+    100% { transform: scale(1.07); }
 }
 
-@media screen and(min-width:1600px) {
+@media (max-width: 1440px) {
+    .logo-pulse { 
+        max-height: 350px;
+        max-width: 350px;
+    }
     
+    .logo-estacao {
+        max-height: 700px;
+        max-width: 700px;
+    }
 }
+
+@media (max-width: 1080px) {
+    .logo-pulse { 
+        max-height: 250px;
+        max-width: 250px;
+    }
+        
+    .logo-estacao {
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 766px) {
+    .logo-pulse { 
+        max-height: 250px;
+        max-width: 100px;
+    }
+        
+    .logo-estacao {
+        max-height: 250px;
+        max-width: 250px;
+    }
+}
+
+
+
