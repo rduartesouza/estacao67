@@ -53,9 +53,18 @@ body {
 } */
 
 .music-player audio {
-    width: 580px; /* Largura do player */
+    width: 280px; /* Largura do player */
     height: 30px;
     outline:none; /* Remove contorno padrão */
+    bottom: 10px;
+    right: 10px;  Distância da direita */
+    left: 10px;
+    padding: 0px; /* Espaçamento interno */
+    display: flex;
+    position:absolute; /* Permite o posicionamento em relação à janela */
+    box-shadow: 0 9px 3px rgba(0, 0, 0, 0.2); /* Sombra */
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
