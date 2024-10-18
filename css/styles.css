@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(150deg, #e27ef7, #ffffff);
+    background: radial-gradient(circle at center,#ffffff, #adadad);
     color: rgb(0, 0, 0);
     height: 100vh;
     display: flex;
@@ -53,7 +53,7 @@ body {
 } */
 
 .music-player audio {
-    width: 280px; /* Largura do player */
+    width: 580px; /* Largura do player */
     height: 30px;
     outline:none; /* Remove contorno padrão */
 }
